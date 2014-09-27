@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Introduction to Microcontroller Programming</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="css/reveal.min.css">
+  <link rel="stylesheet" href="css/theme/default.css" id="theme">
+  <link rel="stylesheet" href="lib/css/zenburn.css">
+  <link rel="stylesheet" href="lib/font-awesome-4.1.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/itmp.css">
+  <!--[if lt IE 9]><script src="lib/js/html5shiv.js"></script><![endif]-->
+</head>
+<body>
+<div class="reveal">
+
+<!--
+#######################################################
+#######################################################
+
+                        PRELUDE
+
+#######################################################
+#######################################################
+-->
+
+
+<div class="slides">
+<section><h3>Elektrolyse</h3>
+  <h4>20 Graphitelektroden später</h4>
+  <div>
+    <p>hadez (@hdznrrd)</p>
+  </div>
+</section>
+
+<section><h3>Das Problem</h3>
+<img src="lib/problem.jpg" alt="">
+</section>
+
+<section><h3>Lösungsmöglichkeiten</h3>
+<ul>
+  <li>Ignorieren
+    <ul>
+      <li class="fragment" data-fragment-index="2">Wurde versucht, hat nicht funktioniert.</li>
+    </ul>
+  </li>
+
+  <li>Andere Leute machen lassen
+    <ul>
+      <li class="fragment" data-fragment-index="3">Kostet Geld.</li>
+    </ul>
+  </li>
+
+  <li>Zum Umweltmobil tragen
+    <ul>
+      <li class="fragment" data-fragment-index="4">Och! Arbeit! #firstworldproblem</li>
+    </ul>
+  </li>
+
+  <li>Science!
+    <ul>
+      <li class="fragment" data-fragment-index="5">Wir wollen ja was lernen.</li>
+    </ul>
+  </li>
+</ul>
+</section>
+
+
+<section><h3>Elektrolyse</h3>
+<ul>
+    <li>Kathode (-)
+        <ul>
+            <li class="fragment" data-fragment-index="2">Kupferplatte</li>
+        </ul>
+    </li>
+    <li>Anode (+)
+        <ul>
+            <li class="fragment" data-fragment-index="3">Kohle/Graphit</li>
+            <li class="fragment" data-fragment-index="3">Edelstahl</li>
+            <li class="fragment" data-fragment-index="3">Platin</li>
+        </ul>
+    </li>
+    <li>Brühe (irgs)
+        <ul>
+            <li class="fragment" data-fragment-index="4">Misteryschlonz aus Ätzabfällen</li>
+        </ul>
+    </li>
+    <li>Energie
+        <ul>
+            <li class="fragment" data-fragment-index="5">Labornetzteil</li>
+        </ul>
+    </li>
+</ul>
+</section>
+
+<section><h3>Die Theorie</h3>
+<ul>
+    <li>Cu<sup>2+</sup> Ionen wandern zur Kupferkathode</li>
+    <li>Kupfer kann in den Restmüll</li>
+    <li>Restflüssigkeit stark verdünnt in den Abfluss</li>
+</ul>
+</section>
+
+<section>
+    <h3>Versuch</h3>
+    <ul>
+        <li>Bleistiftminen 2H</li>
+        <li>Ordentlich Bums (12 V)</li>
+    </ul>
+    <img src="lib/ganz.jpg" alt="">
+</section>
+
+<section>
+    <h3>Ergebnis</h3>
+   <img src="lib/kaputt.jpg" alt="">
+    Zuviel Wums zerlegt die Elektrode?
+</section>
+
+<section>
+    <h3>Versuch</h3>
+    <ul>
+        <li>Bleistiftminen 2H</li>
+        <li>Grobe Annäherung nach Pauling: 1.8 bis 2 V</li>
+    </ul>
+</section>
+<section>
+    <h3>Ergebnis</h3>
+    <ul>
+        <li>Elektrode zersetzt sich langsamer</li>
+    </ul>
+</section>
+<section>
+    <h3>Informationstrichter</h3>
+    <ul>
+        <li>Platin kostet zuviel</li>
+        <li>Lass mal Edelstahl nehmen</li>
+    </ul>
+</section>
+<section>
+    <h3>Ergebnis</h3>
+    <ul>
+        <li>Der Schlonz wird grün</li>
+        <li>Lassen wir das lieber</li>
+    </ul>
+    <img src="lib/gruen2.jpg" alt="">
+</section>
+<section>
+    <h3>Informationstrichter</h3>
+    <ul>
+        <li>Je härter eine Bleistiftmine, umso mehr Beimengung (Ton)</li>
+    </ul>
+</section>
+<section>
+    <h3>Einkaufsliste</h3>
+    <ul>
+        <li>Bleistiftminen 6B</li>
+    </ul>
+</section>
+<section>
+    <h3>Ergebnis</h3>
+    <ul>
+        <li>Same shit, different Bleistiftmine</li>
+    </ul>
+</section>
+<section>
+    <h3>Informationstrichter</h3>
+    <ul>
+        <li>Alles funktioniert besser wenn es <em>leicht</em> sauer ist</li>
+        <li>pH 3 ist für den Anfang okay</li>
+    </ul>
+</section>
+<section>
+    <h3>Einkaufsliste</h3>
+    <ul>
+        <li>Indikatorpapier</li>
+        <li>Salzsäure</li>
+        <li>Natriumhydroxid</li>
+    </ul>
+</section>
+<section>
+    <h3>Ergebnis</h3>
+    <ul>
+        <li>Success!</li>
+        <li>Aber irgendwie super langsam :(</li>
+    </ul>
+</section>
+<section>
+    <h3>Informationstrichter</h3>
+    <ul>
+        <li>Brühe in Bewegung halten, dann klappts auch mit den Ionen</li>
+    </ul>
+</section>
+<section>
+    <h3>Bastelstunde</h3>
+    <ul>
+        <li>Holz+Motor+Magnet+Heißkleber</li>
+        <li>...</li>
+        <li>Magnetrührer!</li>
+    </ul>
+</section>
+<section><img src="lib/magnet1.jpg" alt=""></section>
+<section><img src="lib/magnet2.jpg" alt=""></section>
+<section><img src="lib/magnet3.jpg" alt=""></section>
+<section><img src="lib/magnet4.jpg" alt=""></section>
+<section><img src="lib/magnet5.jpg" alt=""></section>
+<section>
+    <h3>Ergebnis</h3>
+    <ul>
+        <li>So langsam wird das brauchbar</li>
+    </ul>
+</section>
+<section>
+    <h3>Scaling up</h3>
+    <ul>
+        <li>Der größte Bleistift der Welt</li>
+    </ul>
+</section>
+
+<section><img src="lib/graphit1.jpg" alt=""></section>
+<section><img src="lib/graphit2.jpg" alt=""></section>
+
+<section>
+    <h3>Ergebnis</h3>
+    <ul>
+        <li>Läuft.</li>
+    </ul>
+</section>
+<section>
+    <h3>Ist das Kupfer raus?</h3>
+    <ul>
+        <li>Ammoniakwasser ist dein Freund</li>
+        <li class="fragment" data-fragment-index="2">Dein Freund riecht nach Bahnhofsunterführung</li>
+        <li class="fragment" data-fragment-index="3">Dein Freund kuschelt gerne mit Kupferionen und wird dabei blau</li>
+        <li class="fragment" data-fragment-index="3">TT: Tetraminkupfer(II)-Komplex</li>
+    </ul>
+</section>
+<section>
+    <h3>pH Wert einstellen</h3>
+    <ul>
+        <li>Salzsäure machts sauer</li>
+        <li>Natriumhydroxid machts basis</li>
+        <li class="fragment" data-fragment-index="2">Indikatorpapier ist dein Freund</li>
+    </ul>
+        <img  class="fragment" data-fragment-index="2" src="lib/indikator.jpg" alt="">
+</section>
+<section>
+    <h3>Nicht so lustiges</h3>
+    <ul>
+        <li>Kippt <em><strong>NIE</strong></em> unterschiedliches Zeugs zusammen</li>
+        <li class="fragment" data-fragment-index="2">Dinge passieren</li>
+        <li class="fragment" data-fragment-index="3">Dinge sind unbrauchbar</li>
+        <li class="fragment" data-fragment-index="4">Dinge sind teuer zu entsorgen</li>
+    </ul>
+</section>
+
+<section>
+    <h3>Fragen?</h3>
+    <ul>
+        <li>Jetzt.</li>
+    </ul>
+</section>
+<!--
+section>(h3,ul>li*3)
+-->
+
+<!--
+#######################################################
+#######################################################
+
+                 META INFORMATION
+
+#######################################################
+#######################################################
+-->
+
+<section id="meta"><h3>Meta Information</h3>
+  <ul>
+    <li>Contact Info
+      <ul>
+        <li>hadez<br/>
+        @hdznrrd, github.com/hdznrrd, hadez@shackspace.de</li>
+      </ul>
+    </li>
+  </ul>
+</section>
+
+</div> <!-- reveal -->
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.min.js"></script>
+<script>
+  // Full list of configuration options available here:
+  // https://github.com/hakimel/reveal.js#configuration
+  Reveal.initialize({
+    controls: false,
+    progress: true,
+    history: true,
+    center: true,
+
+    theme: 'night',
+    transition: 'none',
+
+    // Optional libraries used to extend on reveal.js
+    dependencies: [
+      { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+      { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+      { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+    ]
+  });
+</script>
+</body>
+</html>

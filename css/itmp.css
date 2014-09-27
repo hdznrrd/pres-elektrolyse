@@ -1,0 +1,89 @@
+.reveal ul, .reveal ul * ul, .reveal ul * ul * ul {
+	list-style: none;
+	list-style-type: none;
+}
+
+.reveal .slides {
+    text-align: center;    
+}
+.reveal ol.alpha {
+	list-style-type: lower-alpha;
+}
+
+.reveal li {
+  padding-top: 0.3em;
+}
+
+.reveal sub {
+	vertical-align: -0.6em;
+	font-size: 0.6em;
+	line-height: 0.6em;
+}
+
+.reveal div#staticnav {
+	height: 30px;
+  width: 40px;
+	overflow: hidden;
+	font-size: 50%;
+}
+
+.reveal div#staticnav:hover {
+	height: auto;
+  width: auto;
+}
+
+.reveal .fa {
+	font-family: 'FontAwesome';
+	font-style: normal;
+  	text-rendering: auto;
+}
+
+.reveal .fa-2x {
+	font-size: 200%;
+}
+
+.reveal section img {
+	border: none;
+}
+
+.reveal section .photowrapper {
+  font-size: 50%;
+  display: inline-block;
+}
+
+.reveal section div.component div {
+	display: inline-block;
+    color: white;
+}
+
+.reveal * .inline {
+  display: inline;
+}
+
+.reveal * div.component {
+	padding: 5px;
+	display: inline-block;
+}
+.reveal section img {
+	background: none;
+	box-shadow: none;
+}
+
+.reveal section .attribution {
+	font-size: 50%;
+	line-height: 1;
+}
+
+.reveal .overbar {
+	text-decoration: overline;
+}
+
+div.floatleft img {
+    float: left;
+    height: 300px;
+}
+
+div.floatleft > ul {
+    float: left;
+    width: 70%;
+}
